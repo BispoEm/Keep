@@ -1,5 +1,5 @@
 //*******************************
-//** codigo de detecção do verde
+//** codigo de detecÃ§Ã£o do be
 //*******************************
 void detverde(){
 	verde=0;
@@ -71,7 +71,7 @@ void detverde(){
 }
 
 //*******************************
-//** codigo de detecção do verde na esquerda
+//** codigo de detecÃ§Ã£o do verde na esquer
 //*******************************
 
 void verdeesquerda(){
@@ -132,7 +132,7 @@ void verdeesquerda(){
 
 
 //*******************************
-//** codigo de detecção do verde na direita
+//** codigo de detecÃ§Ã£o do verde na direi
 //*******************************
 void verdedireita(){
 

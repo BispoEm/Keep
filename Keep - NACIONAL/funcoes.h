@@ -29,8 +29,10 @@ void meiopreto_dir(){
 
 int Dist_Frente() {
 	return SensorValue(S3);
-
 }
 int	Dist_Lateral() {
 	return SensorValue(S4);
+}
+int cor3() {
+	return getColorName(S3);
 }

@@ -3,8 +3,6 @@
 #include <canto2.h>;
 #include <canto3.h>;
 
-
-
 void sala3(){
 	//ir para frente
 	setMultipleMotors(50, motorA, motorB);

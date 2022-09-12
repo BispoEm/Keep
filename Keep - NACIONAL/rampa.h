@@ -21,7 +21,7 @@ void segrampa()
 		setMotor(motorB,20);
 	}
 	if(Dist_Lateral() > 7){
-		stopTask(obterCor);
+		// evs - 12/09/2022 - removi ( stoptask(obterCor) )
 		sleep(200);
 		stopAllMotors();
 		wait(500,milliseconds);

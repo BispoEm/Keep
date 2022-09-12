@@ -1,5 +1,5 @@
 //*******************************
-//** codigo de detecção de virada de 90 graus para a esquerda
+//** codigo de detecÃ§Ã£o de virada de 90 graus para a esquer
 //*******************************
 
 void noventaesquerda()
@@ -9,10 +9,10 @@ void noventaesquerda()
 	stopAllMotors();	wait(30,milliseconds);
 
 
-	if ( cor1==2 && cor2 == 2 ){
+	if ( cor3() != BRANCO ){
 		stopAllMotors(); wait(50,milliseconds);
 		setMultipleMotors(50,motorA,motorB);
-		wait(260,milliseconds);
+		wait(200,milliseconds);
 		// MEIO PRETO ESQUERDA
 		if(cor1!=1){
 			meiopreto_esq();
@@ -25,16 +25,14 @@ void noventaesquerda()
 		stopAllMotors(); wait(250,milliseconds);
 	}
 	else{
-
-
 		contador=0;
 		stopAllMotors();	wait(100,milliseconds);
-		setMultipleMotors(50,motorA,motorB);
-		wait(290,milliseconds);
+		setMultipleMotors(-22,motorA,motorB);
+		wait(110,milliseconds);
 
 		stopAllMotors();	wait(100,milliseconds);
 
-		while(cor2==1 && contador<=9){
+		while(cor2!=2 && contador<=10){
 			contador++;
 			setMotor(motorA, 30);
 			setMotor(motorB,-30);
@@ -44,24 +42,23 @@ void noventaesquerda()
 		stopAllMotors();	wait(200,milliseconds);
 		contador=0;
 
-		while( cor2!=2 && contador<=8000){
-			setMotor(motorA,-35);
-			setMotor(motorB, 35);
-			contador++;
+		while( cor3()!= PRETO){
+			setMotor(motorA,-30);
+			setMotor(motorB, 30);
 		}
 
 		stopAllMotors(); wait(100,milliseconds);
 
-		setMotor(motorA,40);
-		setMotor(motorB,-40);
-		wait(300,milliseconds);
+		setMotor(motorA,-30);
+		setMotor(motorB, 30);
+		wait(200,milliseconds);
 
 		stopAllMotors();	wait(100,milliseconds);
 
-		setMultipleMotors(60,motorA,motorB);
-		wait(50,milliseconds);
+		setMultipleMotors(30,motorA,motorB);
+		wait(100,milliseconds);
 
-		stopAllMotors();
+		stopAllMotors(); 	wait(100000000000000000,milliseconds);
 
 		sleep(50);
 		stopAllMotors();	wait(100,milliseconds);
@@ -119,7 +116,7 @@ void noventaesquerda()
 
 
 //*******************************
-//** codigo de detecção de virada de 90 graus para a direita
+//** codigo de detecÃ§Ã£o de virada de 90 graus para a direi
 //*******************************
 void noventadireita()
 {
@@ -128,10 +125,10 @@ void noventadireita()
 	stopAllMotors();	wait(30,milliseconds);
 
 
-	if ( cor1==2 && cor2 == 2 ){
+	if ( cor3() != BRANCO ){
 		stopAllMotors(); wait(50,milliseconds);
 		setMultipleMotors(50,motorA,motorB);
-		wait(260,milliseconds);
+		wait(200,milliseconds);
 		// MEIO PRETO ESQUERDA
 		if(cor1!=1){
 			meiopreto_esq();
@@ -147,12 +144,12 @@ void noventadireita()
 
 		contador=0;
 		stopAllMotors();	wait(100,milliseconds);
-		setMultipleMotors(50,motorA,motorB);
-		wait(290,milliseconds);
+		setMultipleMotors(-22,motorA,motorB);
+		wait(110,milliseconds);
 
 		stopAllMotors();	wait(100,milliseconds);
 
-		while(cor1==1 && contador<=9){
+		while(cor1!=2 && contador<=10){
 			contador++;
 			setMotor(motorA,-30);
 			setMotor(motorB, 30);
@@ -162,25 +159,24 @@ void noventadireita()
 		stopAllMotors();	wait(200,milliseconds);
 		contador=0;
 
-		while( cor1!=2 && contador<=8000){
-			setMotor(motorA, 35);
-			setMotor(motorB,-35);
-			contador++;
+		while(cor3()!= PRETO){
+			setMotor(motorA, 30);
+			setMotor(motorB,-30);
 		}
 
 		stopAllMotors();	wait(100,milliseconds);
 
-		setMotor(motorA,-40);
-		setMotor(motorB, 40);
-		wait(300,milliseconds);
+		setMotor(motorA, 30);
+		setMotor(motorB,-30);
+		wait(200,milliseconds);
 
 
 		stopAllMotors();	wait(100,milliseconds);
 
-		setMultipleMotors(60,motorA,motorB);
-		wait(50,milliseconds);
+		setMultipleMotors(30,motorA,motorB);
+		wait(100,milliseconds);
 
-		stopAllMotors();
+		stopAllMotors(); 	wait(100000000000000000,milliseconds);
 
 		sleep(50);
 		stopAllMotors();	wait(100,milliseconds);

@@ -188,5 +188,5 @@ void seguelinha()
 	if (Dist_Frente()>1 && Dist_Frente()<5){
 		obstaculo();
 	}
-
+/**/
 }// void
