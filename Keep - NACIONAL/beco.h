@@ -5,9 +5,15 @@ void beco()
 	playSound(soundBlip);	wait(2,milliseconds);
 	stopAllMotors();	wait(50,milliseconds);
 
-	// frente beco
-	setMotor(motorA,40);
-	moveMotor(motorB,50,degrees,40);
+	setMotor(motorA,-30);
+	setMotor(motorB, 30);
+	wait(100,milliseconds);
+
+	stopAllMotors();	wait(100,milliseconds);
+
+	// VERDE FRENTE
+	setMultipleMotors(22,motorA,motorB);
+	wait(500,milliseconds);
 
 	stopAllMotors();	wait(100,milliseconds);
 
@@ -18,24 +24,27 @@ void beco()
 	stopAllMotors();	wait(20,milliseconds);
 
 	// ENQUANTO S2 DIFERENTE DE PRETO VIRAR ESQUERDA
-	while(cor2 == 1 ){
+	while(cor3() == BRANCO ){
 		setMotor(motorA,-30);
 		setMotor(motorB, 30);
 	} // WHILE
 
 
-	stopAllMotors();	wait(50,milliseconds);
-
-	setMotor(motorA, 30);
-	setMotor(motorB,-30);
-	wait(200,milliseconds);
-
 	stopAllMotors();	wait(200,milliseconds);
 
-	setMotor(motorB, 50);
-	moveMotor(motorA,60, degrees, 50);
+	setMultipleMotors(22,motorA,motorB);
+	wait(600,milliseconds);
 
-	stopAllMotors();	wait(100,milliseconds);
+	stopAllMotors();	wait(50,milliseconds);
 
-	sleep(200);  stopAllMotors();	wait(250,milliseconds);
+	// MEIO PRETO ESQUERDA
+	if(cor1!=1){
+		meiopreto_esq();
+	}
+	// MEIO PRETO DIREITA
+	if(cor2!=1){
+		meiopreto_dir();
+	}
+	sleep(100);
+	stopAllMotors(); wait(150,milliseconds);
 }

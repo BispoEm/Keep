@@ -1,5 +1,5 @@
 //*******************************
-//** codigo de detecção do be
+//** codigo de detecÃÂ§Ã�
 //*******************************
 void detverde(){
 	verde=0;
@@ -71,7 +71,7 @@ void detverde(){
 }
 
 //*******************************
-//** codigo de detecção do verde na esquer
+//** codigo de detecÃÂ§ÃÂ£o do ver
 //*******************************
 
 void verdeesquerda(){
@@ -83,8 +83,8 @@ void verdeesquerda(){
 	stopAllMotors(); wait( 100,milliseconds );
 
 	// VERDE FRENTE
-	setMultipleMotors(50,motorA,motorB);
-	wait(410,milliseconds);
+	setMultipleMotors(22,motorA,motorB);
+	wait(700,milliseconds);
 
 	stopAllMotors();	wait(200,milliseconds);
 
@@ -94,27 +94,15 @@ void verdeesquerda(){
 	wait(350,milliseconds);
 
 	// ENQUANDO S1 DIFERENTE DE PRETO VIRAR DIREITA
-	while(cor1!=2){
+	while(cor3()!= PRETO){
 		setMotor(motorA,-35);
 		setMotor(motorB, 35);
 	} // WHILE
-
-	// ENQUANTO S2 DIFERENTE DE PRETO VIRAR ESQUERDA
-	while(cor1!= 1 ){
-		setMotor(motorA,-35);
-		setMotor(motorB, 35);
-	} // WHILE
-
-	stopAllMotors();	wait(50,milliseconds);
-
-	setMotor(motorA,-30);
-	setMotor(motorB, 30);
-	wait(300,milliseconds);
 
 	stopAllMotors();	wait(200,milliseconds);
 
-	setMotor(motorB, 50);
-	moveMotor(motorA,60, degrees, 50);
+	setMultipleMotors(22,motorA,motorB);
+	wait(600,milliseconds);
 
 	stopAllMotors();	wait(50,milliseconds);
 
@@ -132,7 +120,7 @@ void verdeesquerda(){
 
 
 //*******************************
-//** codigo de detecção do verde na direi
+//** codigo de detecÃÂ§ÃÂ£o do ve
 //*******************************
 void verdedireita(){
 
@@ -143,8 +131,8 @@ void verdedireita(){
 	stopAllMotors(); wait( 100,milliseconds );
 
 	// VERDE FRENTE
-	setMultipleMotors(50,motorA,motorB);
-	wait(380,milliseconds);
+	setMultipleMotors(22,motorA,motorB);
+	wait(700,milliseconds);
 
 	stopAllMotors();	wait(200,milliseconds);
 
@@ -154,27 +142,15 @@ void verdedireita(){
 	wait(350,milliseconds);
 
 	// ENQUANDO S1 DIFERENTE DE PRETO VIRAR DIREITA
-	while(cor2!=2){
+	while(cor3()!= PRETO){
 		setMotor(motorA, 35);
 		setMotor(motorB,-35);
 	} // WHILE
-
-	// ENQUANDO S3 DIFERENTE DE PRETO VIRAR DIREITA
-	while(cor2!=1 ){
-		setMotor(motorA, 35);
-		setMotor(motorB,-35);
-	} // WHILE
-
-	stopAllMotors();	wait(50,milliseconds);
-
-	setMotor(motorA, 30);
-	setMotor(motorB,-30);
-	wait(300,milliseconds);
 
 	stopAllMotors();	wait(200,milliseconds);
 
-	setMotor(motorB, 50);
-	moveMotor(motorA,60, degrees, 50);
+	setMultipleMotors(22,motorA,motorB);
+	wait(600,milliseconds);
 
 	stopAllMotors();	wait(50,milliseconds);
 

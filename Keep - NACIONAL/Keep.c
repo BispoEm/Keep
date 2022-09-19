@@ -7,14 +7,13 @@
 #define PRETO 1
 
 //|----------------------------------|//
-//| VARIAVEIS ESTARA DENTRO DESTE .h |//
-#include <variaveis.h>
-//| VARIAVEIS ESTARA DENTRO DESTE .h |//
-//|----------------------------------|//
 //|  FUNCOES ESTARA DENTRO DESTE .h  |//
 #include <funcoes.h>
 //|  FUNCOES ESTARA DENTRO DESTE .h  |//
-
+//|----------------------------------|//
+//| VARIAVEIS ESTARA DENTRO DESTE .h |//
+#include <variaveis.h>
+//| VARIAVEIS ESTARA DENTRO DESTE .h |//
 //|----------------------------------|//
 //| SEGUELINHA ESTARA DENTRO DESTE .h|//
 #include <seguelinha.h>
@@ -83,7 +82,7 @@ task obterCor(){
 		//////////////| SENSOR 3 |////////////////
 		//////////////////////////////////////////
 
-		// esta sendo utilizado apenas a condiÃ?Â?Ã?�
+		// esta sendo utilizado apenas a condiÃÂÃ
 
 		//////////////////////////////////////////
 		//////////////| FINAIS |////////////////

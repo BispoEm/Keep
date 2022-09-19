@@ -12,7 +12,7 @@ void seguelinha()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// BRANCO FRENTE
 	if(cor1==1 && cor2==1){
-		setMultipleMotors(22,motorA,motorB);
+		setMultipleMotors(25,motorA,motorB);
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -31,8 +31,8 @@ void seguelinha()
 	// PRETO FRENTE
 	if(cor1==2 && cor2==2){
 		stopAllMotors(); wait(50,milliseconds);
-		setMultipleMotors(40,motorA,motorB);
-		wait(250,milliseconds);
+		setMultipleMotors(25,motorA,motorB);
+		wait(500,milliseconds);
 		// MEIO PRETO ESQUERDA
 		if(cor1!=1){
 			meiopreto_esq();
@@ -58,8 +58,8 @@ void seguelinha()
 
 		if(cor1==2 && cor2==2){
 			stopAllMotors();  wait(50,milliseconds);
-			setMultipleMotors(50,motorA,motorB);
-			wait(300,milliseconds);
+			setMultipleMotors(25,motorA,motorB);
+			wait(500,milliseconds);
 			stopAllMotors(); 	wait(200,milliseconds);
 
 		}
@@ -81,8 +81,8 @@ void seguelinha()
 
 		if(cor1==2 && cor2==2){
 			stopAllMotors();  wait(50,milliseconds);
-			setMultipleMotors(50,motorA,motorB);
-			wait(300,milliseconds);
+			setMultipleMotors(25,motorA,motorB);
+			wait(500,milliseconds);
 			stopAllMotors(); 	wait(200,milliseconds);
 
 		}
@@ -95,13 +95,9 @@ void seguelinha()
 	// VERDE ESQUERDA
 	if(cor1==4){
 		stopAllMotors();  wait(100,milliseconds);
-		setMotor(motorA,-30);
-		setMotor(motorB, 30);
-		wait(30,milliseconds);
-		stopAllMotors();  wait(100,milliseconds);
-		setMultipleMotors(50,motorA,motorB);
-		wait(100,milliseconds);
-		stopAllMotors(); 	wait(300,milliseconds);
+		setMultipleMotors(22,motorA,motorB);
+		wait(40,milliseconds);
+		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(100);
 		stopAllMotors(); 	wait(200,milliseconds);
 
@@ -113,9 +109,9 @@ void seguelinha()
 			beco();
 		}
 		else if(cor1==2 && cor2==2){
-			stopAllMotors();  wait(50,milliseconds);
-			setMultipleMotors(70,motorA,motorB);
-			wait(200,milliseconds);
+			stopAllMotors(); wait(50,milliseconds);
+			setMultipleMotors(22,motorA,motorB);
+			wait(400,milliseconds);
 		}// SE NAO FAZER VERDE ESQUERDA
 		else{
 			stopAllMotors(); 	wait(300,milliseconds);
@@ -140,13 +136,9 @@ void seguelinha()
 	// VERDE DIREITA
 	if(cor2==4){
 		stopAllMotors();  wait(100,milliseconds);
-		setMotor(motorA, 30);
-		setMotor(motorB,-30);
-		wait(30,milliseconds);
-		stopAllMotors();  wait(100,milliseconds);
-		setMultipleMotors(50,motorA,motorB);
-		wait(100,milliseconds);
-		stopAllMotors(); 	wait(300,milliseconds);
+		setMultipleMotors(22,motorA,motorB);
+		wait(40,milliseconds);
+		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(100);
 		stopAllMotors(); 	wait(200,milliseconds);
 
@@ -158,9 +150,9 @@ void seguelinha()
 			beco();
 		}
 		else if(cor1==2 && cor2==2){
-			stopAllMotors();  wait(50,milliseconds);
-			setMultipleMotors(70,motorA,motorB);
-			wait(200,milliseconds);
+			stopAllMotors(); wait(50,milliseconds);
+			setMultipleMotors(22,motorA,motorB);
+			wait(400,milliseconds);
 		}// SE NAO FAZER VERDE ESQUERDA
 		else{
 			stopAllMotors(); 	wait(300,milliseconds);
@@ -180,7 +172,7 @@ void seguelinha()
 			}
 		}
 	}
-
+/*
 	if (Dist_Lateral()>1 && Dist_Lateral()<8){
 		rampa();
 	}
@@ -188,5 +180,6 @@ void seguelinha()
 	if (Dist_Frente()>1 && Dist_Frente()<5){
 		obstaculo();
 	}
+
 /**/
 }// void

@@ -22,17 +22,17 @@ int verde,
 // variveis para inserir valores
 // | - Sensor 1 - | //
 	int	abc1_branco = 1500; // valor branco estavel
-	int abc1_verde = 400; // valor verde estavel
+	int abc1_verde = 500; // valor verde estavel
 // | - Sensor 2 - | //
 // | - Sensor 1 - | //
 	int	abc2_branco = 2100; // valor branco estavel
-	int abc2_verde = 650 ; // valor verde estavel
+	int abc2_verde = 700 ; // valor verde estavel
 
 // variaveis para receber valores da calibracao
 // | - Sensor 1 - | //
 	int abc1_verde_MIN = (abc1_verde-50) ;  // - Verde minimo ||
 	int abc1_verde_MAX = (abc1_verde+50) ; // - Verde maximo ||
-	int abc1_preto = (abc1_verde_MIN-100) ; // Preto minimo ||
+	int abc1_preto = (abc1_verde_MIN-90) ; // Preto minimo ||
 	int abc1_meiopreto_MIN = (abc1_verde_MAX+100) ; // Meio Preto minimo ||
 	int abc1_meiopreto_MAX = (abc1_branco-150) ; // Meio Preto maximo ||
 
@@ -40,7 +40,7 @@ int verde,
 // | - Sensor 1 - | //
 	int abc2_verde_MIN = (abc2_verde-50) ;  // - Verde minimo ||
 	int abc2_verde_MAX = (abc2_verde+50) ; // - Verde maximo ||
-	int abc2_preto = (abc2_verde_MIN-100) ; // Preto minimo ||
+	int abc2_preto = (abc2_verde_MIN-90) ; // Preto minimo ||
 	int abc2_meiopreto_MIN = (abc2_verde_MAX+100) ; // Meio Preto minimo ||
 	int abc2_meiopreto_MAX = (abc2_branco-150) ; // Meio Preto maximo ||
 
