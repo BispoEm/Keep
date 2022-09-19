@@ -95,8 +95,8 @@ void seguelinha()
 	// VERDE ESQUERDA
 	if(cor1==4){
 		stopAllMotors();  wait(100,milliseconds);
-		setMultipleMotors(22,motorA,motorB);
-		wait(40,milliseconds);
+		setMultipleMotors(30,motorA,motorB);
+		wait(120,milliseconds);
 		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(100);
 		stopAllMotors(); 	wait(200,milliseconds);
@@ -136,8 +136,8 @@ void seguelinha()
 	// VERDE DIREITA
 	if(cor2==4){
 		stopAllMotors();  wait(100,milliseconds);
-		setMultipleMotors(22,motorA,motorB);
-		wait(40,milliseconds);
+		setMultipleMotors(30,motorA,motorB);
+		wait(120,milliseconds);
 		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(100);
 		stopAllMotors(); 	wait(200,milliseconds);

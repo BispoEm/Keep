@@ -89,9 +89,9 @@ void verdeesquerda(){
 	stopAllMotors();	wait(200,milliseconds);
 
 	// VIRADA TEMPO
-	setMotor(motorA,-35);
-	setMotor(motorB, 35);
-	wait(350,milliseconds);
+	setMotor(motorA,-30);
+	setMotor(motorB, 30);
+	wait(500,milliseconds);
 
 	// ENQUANDO S1 DIFERENTE DE PRETO VIRAR DIREITA
 	while(cor3()!= PRETO){
@@ -137,14 +137,14 @@ void verdedireita(){
 	stopAllMotors();	wait(200,milliseconds);
 
 	// VIRADA TEMPO
-	setMotor(motorA, 35);
-	setMotor(motorB,-35);
-	wait(350,milliseconds);
+	setMotor(motorA, 30);
+	setMotor(motorB,-30);
+	wait(500,milliseconds);
 
 	// ENQUANDO S1 DIFERENTE DE PRETO VIRAR DIREITA
 	while(cor3()!= PRETO){
-		setMotor(motorA, 35);
-		setMotor(motorB,-35);
+		setMotor(motorA, 30);
+		setMotor(motorB,-30);
 	} // WHILE
 
 	stopAllMotors();	wait(200,milliseconds);
