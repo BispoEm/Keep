@@ -1,3 +1,4 @@
+//jmbv 10/09/2022 criado um .h contendo todos os codigos do verde
 //*******************************
 //** codigo de detecÃÂ§Ã�
 //*******************************
