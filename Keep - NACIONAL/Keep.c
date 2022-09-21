@@ -8,6 +8,8 @@
 #define BRANCO 6
 #define PRETO 1
 
+//jmbv 20/09/2022 foi criado um .h para comunicacao com o arduino
+#include <hibrido.h>
 //|----------------------------------|//
 //|  FUNCOES ESTARA DENTRO DESTE .h  |//
 #include <funcoes.h>
@@ -21,9 +23,6 @@
 #include <seguelinha.h>
 //| SEGUELINHA ESTARA DENTRO DESTE .h|//
 //|----------------------------------|//
-//jmbv 20/09/2022 foi criado um .h para comunicacao com o arduino
-#include <hibrido.h>
-
 
 task obterCor(){
 	while(true){
@@ -86,7 +85,7 @@ task obterCor(){
 		//////////////| SENSOR 3 |////////////////
 		//////////////////////////////////////////
 
-		// esta sendo utilizado apenas a condiÃÂÃ
+		// esta sendo utilizado apenas a condiã
 
 		//////////////////////////////////////////
 		//////////////| FINAIS |////////////////
@@ -122,7 +121,7 @@ task main(){
 		displayCenteredBigTextLine(1,"cor1: %d, %d",abc1,cor1);
 		displayCenteredBigTextLine(3,"cor2: %d, %d",abc2,cor2 );
 		displayCenteredBigTextLine(7,"Dist_F: %d",Dist_Frente());
-		displayCenteredBigTextLine(9,"Dist_L: %d",Dist_Lateral());
+		displayCenteredBigTextLine(9,"Dist_L: %d",Dist_LateralEsq());
 
 
 	} //FIM WHILE TRUE

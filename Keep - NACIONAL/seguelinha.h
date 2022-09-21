@@ -4,6 +4,7 @@
 #include <sala3.h>
 #include <rampa.h>
 #include <obstaculo.h>
+#include <redutor.h>
 
 void seguelinha()
 {
@@ -172,14 +173,22 @@ void seguelinha()
 			}
 		}
 	}
+
+	// ebs coloquei condição para redut
+	// abri um .h apenas para ele
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// REDUTOR
+	if( cor3() == 0){
+		redutor();
+	}
 /*
-	if (Dist_Lateral()>1 && Dist_Lateral()<8){
+	if (Dist_LateralEsq()>1 && Dist_LateralEsq()<8){
 		rampa();
 	}
-
-	if (Dist_Frente()>1 && Dist_Frente()<5){
+*/
+	if (Dist_Frente()>1 && Dist_Frente()<6){
 		obstaculo();
 	}
 
-/**/
+
 }// void

@@ -2,6 +2,7 @@
 void obstaculo(){
 
 
+	// ebs - renomeei as variaveis que estava dando erro
 
 	if( Dist_Frente()>1 && Dist_Frente()<5){
 
@@ -16,7 +17,7 @@ void obstaculo(){
 		stopAllMotors();wait(20,milliseconds);
 
 		// PRIMEIRA VIRADA
-		while(Dist_Lateral() >=20){
+		while(Dist_LateralEsq() >=20){
 			setMotor(motorA,30);
 			setMotor(motorB,-30);
 		}
@@ -25,7 +26,7 @@ void obstaculo(){
 		stopAllMotors();wait(100,milliseconds);
 
 		// PRIMEIRA VIRADA
-		while(Dist_Lateral() <=20){
+		while(Dist_LateralEsq() <=20){
 			setMotor(motorA,30);
 			setMotor(motorB,-30);
 		}
@@ -46,7 +47,7 @@ void obstaculo(){
 		stopAllMotors();wait(20,milliseconds);
 
 		// SEGUNDA VIRADA(SENSOR)
-		while ( Dist_Lateral() >30 ){
+		while ( Dist_LateralEsq() >30 ){
 			setMotor(motorA,-20);
 			setMotor(motorB, 20);
 		}
@@ -55,7 +56,7 @@ void obstaculo(){
 		stopAllMotors();wait(100,milliseconds);
 
 		// SEGUNDA VIRADA(SENSOR)
-		while ( Dist_Lateral() <30 ){
+		while ( Dist_LateralEsq() <30 ){
 			setMotor(motorA,-30);
 			setMotor(motorB,30);
 		}
@@ -73,12 +74,12 @@ void obstaculo(){
 		//STOP OBRIGATORIO
 		stopAllMotors();wait(100,milliseconds);
 
-		while ( Dist_Lateral() > 30 ){
+		while ( Dist_LateralEsq() > 30 ){
 			setMultipleMotors( 30,motorA,motorB);
 		}
 		stopAllMotors(); wait(100,milliseconds);
 
-		while ( Dist_Lateral() < 30 ){
+		while ( Dist_LateralEsq() < 30 ){
 			setMultipleMotors( 30,motorA,motorB);
 		}
 
@@ -88,13 +89,13 @@ void obstaculo(){
 		stopAllMotors(); wait(20,milliseconds);
 
 		//virar pra esquerda
-		while ( Dist_Lateral() > 30 ){
+		while ( Dist_LateralEsq() > 30 ){
 			setMotor(motorA, -30);
 			setMotor(motorB, 30);
 		}
 		stopAllMotors(); wait(100,milliseconds);
 
-		while ( Dist_Lateral() < 30 ){
+		while ( Dist_LateralEsq() < 30 ){
 			setMotor(motorA, -30);
 			setMotor(motorB, 30);
 
@@ -102,13 +103,13 @@ void obstaculo(){
 		stopAllMotors(); wait(100,milliseconds);
 
 
-		while ( Dist_Lateral() > 30 ){
+		while ( Dist_LateralEsq() > 30 ){
 			setMultipleMotors( 30,motorA,motorB);
 		}
 
 		stopAllMotors(); wait(100,milliseconds);
 
-		while ( Dist_Lateral() < 30 ){
+		while ( Dist_LateralEsq() < 30 ){
 			setMultipleMotors( 30,motorA,motorB);
 		}
 

@@ -1,6 +1,6 @@
 //jmbv 10/09/2022 criado um .h contendo todos os codigos do verde
 //*******************************
-//** codigo de detecÃÂ§Ã�
+//** codigo de detecão do bec
 //*******************************
 void detverde(){
 	verde=0;
@@ -72,7 +72,7 @@ void detverde(){
 }
 
 //*******************************
-//** codigo de detecÃÂ§ÃÂ£o do ver
+//** codigo de detecão verde esquerd
 //*******************************
 
 void verdeesquerda(){
@@ -121,7 +121,7 @@ void verdeesquerda(){
 
 
 //*******************************
-//** codigo de detecÃÂ§ÃÂ£o do ve
+//** codigo de detecão verde direit
 //*******************************
 void verdedireita(){
 

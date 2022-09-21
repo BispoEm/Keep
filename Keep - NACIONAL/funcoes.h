@@ -1,6 +1,10 @@
 //| AQUI SERAO ARMAZENADAS TODAS AS VARIAVEIS |//
 /////////////////////////////////////////////////
 
+int cor3() {
+	return getColorName(S3);
+}
+
 // funcoes para sensores
 int Dist_Frente() {
     //return SensorValue(S3);
@@ -8,10 +12,6 @@ int Dist_Frente() {
     return read_sensor_US1( ARDUINO_ADDRESS, 1, true);
 }
 
-int cor3() {
-	return getColorName(S3);
-}
-  
 //jmbv 20/09/2022 funcao que retorna o valor da distancia do sensor da esquerda
 int	Dist_LateralEsq() {
 	return SensorValue(S4);

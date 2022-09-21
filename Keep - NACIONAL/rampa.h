@@ -20,7 +20,8 @@ void segrampa()
 		setMotor(motorA,60);
 		setMotor(motorB,20);
 	}
-	if(Dist_Lateral() > 7){
+	// ebs - renomeei a variavel que estava dando erro
+	if(Dist_LateralEsq() > 7){
 		// evs - 12/09/2022 - removi ( stoptask(obterCor) )
 		sleep(200);
 		stopAllMotors();
@@ -36,7 +37,8 @@ void segrampa()
 //*******************************
 
 void rampa(){
-if (Dist_Lateral()<8){
+	// ebs - renomeei a variavel que estava dando erro
+if (Dist_LateralEsq()<8){
 		playSound(soundUpwardTones);
 		wait(1,milliseconds);
 
@@ -48,7 +50,8 @@ if (Dist_Lateral()<8){
 		stopAllMotors();
 		wait(800,milliseconds);
 
-		if (Dist_Lateral()<8){
+	// ebs - renomeei a variavel que estava dando erro
+		if (Dist_LateralEsq()<8){
 			playSound(soundFastUpwardTones);
 			while(true){
 				segrampa();
