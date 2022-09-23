@@ -53,7 +53,7 @@ int read_sensor_US1(byte address, int pin_num, bool analog_digital)
 	int value = i2c_msg(address, 2, 1, 1, pin_num, analog_digital , 0, 0);
 	return value;
 }
-/*
+
 int read_sensor_US2(byte address, int pin_num, bool analog_digital)
 {
 int value = i2c_msg(address, 2, 1, 2, pin_num, analog_digital , 0, 0);
@@ -66,7 +66,7 @@ int read_sensor_US3(byte address, int pin_num, bool analog_digital)
 int value = i2c_msg(address, 2, 1, 3, pin_num, analog_digital , 0, 0);
 return value;
 }
-*/
+/**/
 /*
 int read_sensor_US4(byte address, int pin_num, bool analog_digital)
 {

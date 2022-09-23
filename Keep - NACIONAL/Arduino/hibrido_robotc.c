@@ -63,14 +63,14 @@ int read_sensor_US2(byte address, int pin_num, bool analog_digital)
 {
 	int value = i2c_msg(address, 2, 1, 2, pin_num, analog_digital , 0, 0);
 	return value;
-}/*
-/*
+}
+
 int read_sensor_US3(byte address, int pin_num, bool analog_digital)
 {
 	int value = i2c_msg(address, 2, 1, 3, pin_num, analog_digital , 0, 0);
 	return value;
 }
-
+/*
 int read_sensor_US4(byte address, int pin_num, bool analog_digital)
 {
 	int value = i2c_msg(address, 2, 1, 4, pin_num, analog_digital , 0, 0);
@@ -94,14 +94,13 @@ task main()
 
 		ultrasonic_value = read_sensor_US2( ARDUINO_ADDRESS, 2, true);
 		displayCenteredBigTextLine(7,"valor US2 %d",ultrasonic_value);
-/*
-			ultrasonic_value = read_sensor_US3( ARDUINO_ADDRESS, 0, true);
+
+			ultrasonic_value = read_sensor_US3( ARDUINO_ADDRESS, 3, true);
 		displayCenteredBigTextLine(9,"valor US3 %d",ultrasonic_value);
 /*
-
 			ultrasonic_value = read_sensor_US4( ARDUINO_ADDRESS, 0, true);
 		displayCenteredBigTextLine(11,"valor US4 %d",ultrasonic_value);
-		*/
+*/
 
 	}
 }

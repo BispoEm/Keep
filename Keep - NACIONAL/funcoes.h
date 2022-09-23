@@ -14,12 +14,16 @@ int Dist_Frente() {
 
 //jmbv 20/09/2022 funcao que retorna o valor da distancia do sensor da esquerda
 int	Dist_LateralEsq() {
-	return SensorValue(S4);
+		//return SensorValue(S4);
+    //ebs 23/09/2022 detectar distancia do sensor lateral esquerda
+    return read_sensor_US2( ARDUINO_ADDRESS, 2, true);
 }
 
 //jmbv 20/09/2022 funcao que retorna o valor da distancia do sensor da direita
 int	Dist_LateralDir() {
-	return SensorValue(S4);
+		//return SensorValue(S4);
+    //ebs 23/09/2022 detectar distancia do sensor lateral esquerda
+    return read_sensor_US3( ARDUINO_ADDRESS, 3, true);
 }
 
 // funcao para abaixar a garra

@@ -11,18 +11,13 @@
 //jmbv 20/09/2022 foi criado um .h para comunicacao com o arduino
 #include <hibrido.h>
 //|----------------------------------|//
-//|  FUNCOES ESTARA DENTRO DESTE .h  |//
-#include <funcoes.h>
-//|  FUNCOES ESTARA DENTRO DESTE .h  |//
-//|----------------------------------|//
 //| VARIAVEIS ESTARA DENTRO DESTE .h |//
 #include <variaveis.h>
 //| VARIAVEIS ESTARA DENTRO DESTE .h |//
 //|----------------------------------|//
-//| SEGUELINHA ESTARA DENTRO DESTE .h|//
-#include <seguelinha.h>
-//| SEGUELINHA ESTARA DENTRO DESTE .h|//
-//|----------------------------------|//
+//|  FUNCOES ESTARA DENTRO DESTE .h  |//
+#include <funcoes.h>
+//|  FUNCOES ESTARA DENTRO DESTE .h  |//
 
 task obterCor(){
 	while(true){
@@ -85,7 +80,7 @@ task obterCor(){
 		//////////////| SENSOR 3 |////////////////
 		//////////////////////////////////////////
 
-		// esta sendo utilizado apenas a condiã
+		// esta sendo utilizado apenas a condiÃ
 
 		//////////////////////////////////////////
 		//////////////| FINAIS |////////////////
@@ -103,6 +98,10 @@ task obterCor(){
 	}//WHILE TRUE
 }//TASK OBTERCOR
 
+//| SEGUELINHA ESTARA DENTRO DESTE .h|//
+#include <seguelinha.h>
+//| SEGUELINHA ESTARA DENTRO DESTE .h|//
+//|----------------------------------|//
 
 task main(){
 	startTask(obterCor);
@@ -121,7 +120,9 @@ task main(){
 		displayCenteredBigTextLine(1,"cor1: %d, %d",abc1,cor1);
 		displayCenteredBigTextLine(3,"cor2: %d, %d",abc2,cor2 );
 		displayCenteredBigTextLine(7,"Dist_F: %d",Dist_Frente());
-		displayCenteredBigTextLine(9,"Dist_L: %d",Dist_LateralEsq());
+		displayCenteredBigTextLine(9,"Dist_L_E: %d",Dist_LateralEsq());
+		displayCenteredBigTextLine(11,"Dist_L_D: %d",Dist_LateralDir());
+
 
 
 	} //FIM WHILE TRUE

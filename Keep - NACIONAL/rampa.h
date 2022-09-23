@@ -21,7 +21,7 @@ void segrampa()
 		setMotor(motorB,20);
 	}
 	// ebs - renomeei a variavel que estava dando erro
-	if(Dist_LateralEsq() > 7){
+	if(Dist_LateralEsq() > 8){
 		// evs - 12/09/2022 - removi ( stoptask(obterCor) )
 		sleep(200);
 		stopAllMotors();
@@ -37,8 +37,6 @@ void segrampa()
 //*******************************
 
 void rampa(){
-	// ebs - renomeei a variavel que estava dando erro
-if (Dist_LateralEsq()<8){
 		playSound(soundUpwardTones);
 		wait(1,milliseconds);
 
@@ -61,5 +59,4 @@ if (Dist_LateralEsq()<8){
 			setMultipleMotors(-80,motorA,motorB);
 			wait(400,milliseconds);
 		} // else //
-	} // if rampa
 } // void rampa /

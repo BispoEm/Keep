@@ -1,11 +1,5 @@
 
 void obstaculo(){
-
-
-	// ebs - renomeei as variaveis que estava dando erro
-
-	if( Dist_Frente()>1 && Dist_Frente()<5){
-
 		// TOCAR LOW BUZZ
 		playSound(soundLowBuzz);wait(1,milliseconds);
 
@@ -157,5 +151,4 @@ void obstaculo(){
 
 		stopAllMotors();	wait(200,milliseconds);
 
-	} // IF OBSTACULO
 } // VOID OBSTACULO

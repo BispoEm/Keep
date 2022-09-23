@@ -8,8 +8,6 @@
 
 void seguelinha()
 {
-
-
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// BRANCO FRENTE
 	if(cor1==1 && cor2==1){
@@ -19,13 +17,25 @@ void seguelinha()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// MEIO PRETO ESQUERDA
 	if(cor1==3){
-		meiopreto_esq();
+		setMotor(motorA,-30);
+		wait(0.1,milliseconds);
+		sleep(50);
+		if( cor1==3 ){
+			setMultipleMotors(25,motorA,motorB);
+			wait(100,milliseconds);
+		}
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// MEIO PRETO DIREITA
 	if(cor2==3){
-		meiopreto_dir();
+		setMotor(motorB,-30);
+		wait(0.1,milliseconds);
+		sleep(500);
+		if( cor2==3 ){
+			setMultipleMotors(25,motorA,motorB);
+			wait(100,milliseconds);
+		}
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -174,7 +184,7 @@ void seguelinha()
 		}
 	}
 
-	// ebs coloquei condição para redut
+	// ebs coloquei condiÃÂ§ÃÂ£
 	// abri um .h apenas para ele
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// REDUTOR
@@ -182,13 +192,13 @@ void seguelinha()
 		redutor();
 	}
 /*
-	if (Dist_LateralEsq()>1 && Dist_LateralEsq()<8){
+	if (Dist_LateralEsq()>5 && Dist_LateralEsq()<5){
 		rampa();
 	}
 */
-	if (Dist_Frente()>1 && Dist_Frente()<6){
+/*
+	if (Dist_Frente()>5 && Dist_Frente()<5){
 		obstaculo();
 	}
-
-
+*/
 }// void

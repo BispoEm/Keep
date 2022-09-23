@@ -1,6 +1,6 @@
 //jmbv 10/09/2022 criado um .h contendo os dois lados do noventa
 //*******************************
-//** codigo de detecão noventa esquerd
+//** codigo de detecão noventa esquer
 //*******************************
 
 void noventaesquerda()
@@ -29,7 +29,7 @@ void noventaesquerda()
 		contador=0;
 		stopAllMotors();	wait(100,milliseconds);
 		setMultipleMotors(22,motorA,motorB);
-		wait(500,milliseconds);
+		wait(300,milliseconds);
 
 		stopAllMotors();	wait(200,milliseconds);
 		contador=0;
@@ -42,9 +42,9 @@ void noventaesquerda()
 		stopAllMotors(); wait(100,milliseconds);
 
 		if(cor2 == 2 ){
-			setMotor(motorA,-30);
-			setMotor(motorB, 30);
-			wait(350,milliseconds);
+			setMotor(motorA, 30);
+			setMotor(motorB,-30);
+			wait(400,milliseconds);
 		}
 		else{
 			setMotor(motorA,-30);
@@ -77,7 +77,7 @@ void noventaesquerda()
 
 
 //*******************************
-//** codigo de detecão noventa direit
+//** codigo de detecão noventa direi
 //*******************************
 void noventadireita()
 {
@@ -106,7 +106,7 @@ void noventadireita()
 		contador=0;
 		stopAllMotors();	wait(100,milliseconds);
 		setMultipleMotors(22,motorA,motorB);
-		wait(500,milliseconds);
+		wait(300,milliseconds);
 
 		stopAllMotors();	wait(200,milliseconds);
 		contador=0;
@@ -119,9 +119,9 @@ void noventadireita()
 		stopAllMotors();	wait(100,milliseconds);
 
 		if(cor1 == 2 ){
-			setMotor(motorA, 30);
-			setMotor(motorB,-30);
-			wait(350,milliseconds);
+			setMotor(motorA,-30);
+			setMotor(motorB, 30);
+			wait(400,milliseconds);
 		}
 		else{
 			setMotor(motorA, 30);
