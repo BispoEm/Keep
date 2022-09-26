@@ -19,6 +19,7 @@ void segredutor(){
 }
 
 void redutor(){
+	red=0;
 	// REDUTOR OU RAMPA NACIONAL
 	stopAllMotors();
 	resetTimer(T1);

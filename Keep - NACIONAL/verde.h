@@ -1,6 +1,6 @@
 //jmbv 10/09/2022 criado um .h contendo todos os codigos do verde
 //*******************************
-//** codigo de detecÃ£o do b
+//** codigo de detecÃÂ�
 //*******************************
 void detverde(){
 	verde=0;
@@ -72,7 +72,7 @@ void detverde(){
 }
 
 //*******************************
-//** codigo de detecÃ£o verde esque
+//** codigo de detecÃÂÃÂ£o
 //*******************************
 
 void verdeesquerda(){
@@ -84,8 +84,8 @@ void verdeesquerda(){
 	stopAllMotors(); wait( 100,milliseconds );
 
 	// VERDE FRENTE
-	setMultipleMotors(22,motorA,motorB);
-	wait(500,milliseconds);
+	setMultipleMotors(25,motorA,motorB);
+	wait(850,milliseconds);
 
 	stopAllMotors();	wait(200,milliseconds);
 
@@ -121,7 +121,7 @@ void verdeesquerda(){
 
 
 //*******************************
-//** codigo de detecÃ£o verde dire
+//** codigo de detecÃÂÃÂ�
 //*******************************
 void verdedireita(){
 
@@ -132,8 +132,8 @@ void verdedireita(){
 	stopAllMotors(); wait( 100,milliseconds );
 
 	// VERDE FRENTE
-	setMultipleMotors(22,motorA,motorB);
-	wait(500,milliseconds);
+	setMultipleMotors(25,motorA,motorB);
+	wait(650,milliseconds);
 
 	stopAllMotors();	wait(200,milliseconds);
 

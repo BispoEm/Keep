@@ -80,18 +80,19 @@ task obterCor(){
 		//////////////| SENSOR 3 |////////////////
 		//////////////////////////////////////////
 
-		// esta sendo utilizado apenas a condiÃ
+		// esta sendo utilizado apenas a condiÃ§
 
 		//////////////////////////////////////////
 		//////////////| FINAIS |////////////////
 		//////////////////////////////////////////
 
-		if (cor1==3 && cor2==3){
-			cor1=1;
-			cor2=1;
+		/*
+		if( cor3()==0 ){
+			red=1;
 		}
+		*/
 
-		if (cor1==2 && cor2==2){
+		if (cor1==3 && cor2==3 || cor1==2 && cor2==2){
 			cor1=1;
 			cor2=1;
 		}
@@ -110,10 +111,9 @@ task main(){
 	setMotor(motorC,25);
 	wait(1,	seconds);
 	stopAllMotors();
-	wait(1000,milliseconds);
+	wait(1500,milliseconds);
 
 	while(true){
-		//	setMultipleMotors(20,motorA,motorB);
 
 		seguelinha();
 

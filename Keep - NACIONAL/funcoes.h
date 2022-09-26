@@ -38,14 +38,14 @@ void baixarGarra(){
 
 // funcao do meio preto esquerda
 void meiopreto_esq(){
-	setMotor(motorA,-25);
-	setMotor(motorB, 25);
-	wait(20,milliseconds);
+		setMotor(motorA,-30);
+		setMotor(motorB, 30);
+		wait(20,milliseconds);
 }
 
 // funcao do meio preto direita
 void meiopreto_dir(){
-	setMotor(motorA, 25);
-	setMotor(motorB,-25);
-	wait(20,milliseconds);
+		setMotor(motorA, 30);
+		setMotor(motorB,-30);
+		wait(20,milliseconds);
 }

@@ -17,25 +17,13 @@ void seguelinha()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// MEIO PRETO ESQUERDA
 	if(cor1==3){
-		setMotor(motorA,-30);
-		wait(0.1,milliseconds);
-		sleep(50);
-		if( cor1==3 ){
-			setMultipleMotors(25,motorA,motorB);
-			wait(100,milliseconds);
-		}
+		meiopreto_esq();
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// MEIO PRETO DIREITA
 	if(cor2==3){
-		setMotor(motorB,-30);
-		wait(0.1,milliseconds);
-		sleep(500);
-		if( cor2==3 ){
-			setMultipleMotors(25,motorA,motorB);
-			wait(100,milliseconds);
-		}
+		meiopreto_dir();
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -60,9 +48,9 @@ void seguelinha()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// PRETO ESQUERDA
 	if(cor1==2){
-		stopAllMotors();  wait(100,milliseconds);
-		setMultipleMotors(30,motorA,motorB);
-		wait(90,milliseconds);
+		stopAllMotors();  wait(500,milliseconds);
+		setMultipleMotors(25,motorA,motorB);
+		wait(50,milliseconds);
 		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(200);
 		stopAllMotors(); 	wait(200,milliseconds);
@@ -70,9 +58,8 @@ void seguelinha()
 		if(cor1==2 && cor2==2){
 			stopAllMotors();  wait(50,milliseconds);
 			setMultipleMotors(25,motorA,motorB);
-			wait(500,milliseconds);
+			wait(400,milliseconds);
 			stopAllMotors(); 	wait(200,milliseconds);
-
 		}
 		else{
 			noventaesquerda();
@@ -83,9 +70,9 @@ void seguelinha()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// PRETO DIREITA
 	if(cor2==2){
-		stopAllMotors();  wait(100,milliseconds);
-		setMultipleMotors(30,motorA,motorB);
-		wait(90,milliseconds);
+		stopAllMotors();  wait(500,milliseconds);
+		setMultipleMotors(25,motorA,motorB);
+		wait(50,milliseconds);
 		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(200);
 		stopAllMotors(); 	wait(200,milliseconds);
@@ -93,9 +80,8 @@ void seguelinha()
 		if(cor1==2 && cor2==2){
 			stopAllMotors();  wait(50,milliseconds);
 			setMultipleMotors(25,motorA,motorB);
-			wait(500,milliseconds);
+			wait(400,milliseconds);
 			stopAllMotors(); 	wait(200,milliseconds);
-
 		}
 		else{
 			noventadireita();
@@ -105,9 +91,9 @@ void seguelinha()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// VERDE ESQUERDA
 	if(cor1==4){
-		stopAllMotors();  wait(100,milliseconds);
-		setMultipleMotors(30,motorA,motorB);
-		wait(120,milliseconds);
+		stopAllMotors();  wait(500,milliseconds);
+		setMultipleMotors(25,motorA,motorB);
+		wait(60,milliseconds);
 		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(100);
 		stopAllMotors(); 	wait(200,milliseconds);
@@ -121,7 +107,7 @@ void seguelinha()
 		}
 		else if(cor1==2 && cor2==2){
 			stopAllMotors(); wait(50,milliseconds);
-			setMultipleMotors(22,motorA,motorB);
+			setMultipleMotors(25,motorA,motorB);
 			wait(400,milliseconds);
 		}// SE NAO FAZER VERDE ESQUERDA
 		else{
@@ -146,9 +132,9 @@ void seguelinha()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// VERDE DIREITA
 	if(cor2==4){
-		stopAllMotors();  wait(100,milliseconds);
-		setMultipleMotors(30,motorA,motorB);
-		wait(120,milliseconds);
+		stopAllMotors();  wait(500,milliseconds);
+		setMultipleMotors(25,motorA,motorB);
+		wait(60,milliseconds);
 		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(100);
 		stopAllMotors(); 	wait(200,milliseconds);
@@ -162,7 +148,7 @@ void seguelinha()
 		}
 		else if(cor1==2 && cor2==2){
 			stopAllMotors(); wait(50,milliseconds);
-			setMultipleMotors(22,motorA,motorB);
+			setMultipleMotors(25,motorA,motorB);
 			wait(400,milliseconds);
 		}// SE NAO FAZER VERDE ESQUERDA
 		else{
@@ -184,21 +170,24 @@ void seguelinha()
 		}
 	}
 
-	// ebs coloquei condiÃÂ§ÃÂ£
+	// ebs coloquei condiÃÂÃÂ
 	// abri um .h apenas para ele
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// REDUTOR
-	if( cor3() == 0){
+	if( red==1){
 		redutor();
 	}
-/*
-	if (Dist_LateralEsq()>5 && Dist_LateralEsq()<5){
+	/*
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// RAMPA
+	if (Dist_LateralEsq()>0 && Dist_LateralEsq()<8 && Dist_LateralDir()>0 && Dist_LateralDir()<8){
 		rampa();
 	}
-*/
-/*
-	if (Dist_Frente()>5 && Dist_Frente()<5){
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// OBSTACULO
+	if (Dist_Frente()>0 && Dist_Frente()<7){
 		obstaculo();
 	}
-*/
+	*/
 }// void

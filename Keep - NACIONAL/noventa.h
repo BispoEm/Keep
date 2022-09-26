@@ -1,6 +1,6 @@
 //jmbv 10/09/2022 criado um .h contendo os dois lados do noventa
 //*******************************
-//** codigo de detecão noventa esquer
+//** codigo de detecÃÂ£o noventa 
 //*******************************
 
 void noventaesquerda()
@@ -12,8 +12,8 @@ void noventaesquerda()
 
 	if ( cor3() != BRANCO ){
 		stopAllMotors(); wait(50,milliseconds);
-		setMultipleMotors(22,motorA,motorB);
-		wait(500,milliseconds);
+		setMultipleMotors(25,motorA,motorB);
+		wait(350,milliseconds);
 		// MEIO PRETO ESQUERDA
 		if(cor1!=1){
 			meiopreto_esq();
@@ -28,8 +28,8 @@ void noventaesquerda()
 	else{
 		contador=0;
 		stopAllMotors();	wait(100,milliseconds);
-		setMultipleMotors(22,motorA,motorB);
-		wait(300,milliseconds);
+		setMultipleMotors(25,motorA,motorB);
+		wait(600,milliseconds);
 
 		stopAllMotors();	wait(200,milliseconds);
 		contador=0;
@@ -77,7 +77,7 @@ void noventaesquerda()
 
 
 //*******************************
-//** codigo de detecão noventa direi
+//** codigo de detecÃÂ£o noventa
 //*******************************
 void noventadireita()
 {
@@ -89,7 +89,7 @@ void noventadireita()
 	if ( cor3() != BRANCO ){
 		stopAllMotors(); wait(50,milliseconds);
 		setMultipleMotors(22,motorA,motorB);
-		wait(500,milliseconds);
+		wait(550,milliseconds);
 		// MEIO PRETO ESQUERDA
 		if(cor1!=1){
 			meiopreto_esq();
@@ -105,8 +105,8 @@ void noventadireita()
 
 		contador=0;
 		stopAllMotors();	wait(100,milliseconds);
-		setMultipleMotors(22,motorA,motorB);
-		wait(300,milliseconds);
+		setMultipleMotors(25,motorA,motorB);
+		wait(400,milliseconds);
 
 		stopAllMotors();	wait(200,milliseconds);
 		contador=0;
