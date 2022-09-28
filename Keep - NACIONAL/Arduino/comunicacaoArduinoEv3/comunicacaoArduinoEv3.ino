@@ -13,29 +13,29 @@
 
 #include <Ultrasonic.h>
 
-//ultrasonico 0
+//ultrasonico 1
 #define TRIGGER_PIN  12
 #define ECHO_PIN     13
 
-Ultrasonic ultrasonic(TRIGGER_PIN, ECHO_PIN);
+Ultrasonic ultrasonic1(TRIGGER_PIN, ECHO_PIN);
 
-//ultrasonico 1
+//ultrasonico 2
 #define TRIGGER_PIN1  10
 #define ECHO_PIN1     11
 
-Ultrasonic ultrasonic1(TRIGGER_PIN1, ECHO_PIN1);
-/*
-//ultrasonico 2
-#define TRIGGER_PIN2  7
-#define ECHO_PIN2     6
+Ultrasonic ultrasonic2(TRIGGER_PIN1, ECHO_PIN1);
 
-Ultrasonic ultrasonic2(TRIGGER_PIN2, ECHO_PIN2);*/
+//ultrasonico 3
+#define TRIGGER_PIN2  8
+#define ECHO_PIN2     9
+
+Ultrasonic ultrasonic3(TRIGGER_PIN2, ECHO_PIN2);
 ///----------------------------------------------
 
 int instruction[5] = {5, 0, 0, 0, 0};
-int distancia = 0;
-int distancia1 = 0;/*
-int distancia2 = 0;*/
+int distancia1 = 0;
+int distancia2 = 0;
+int distancia3 = 0;
 
 void setup()
 {
@@ -50,24 +50,24 @@ void setup()
 //________________________________________________________________________________
 void loop()
 {
-  long microsec = ultrasonic.timing();
-  distancia = ultrasonic.convert(microsec, Ultrasonic::CM);
+  long microsec1 = ultrasonic1.timing();
+  distancia1 = ultrasonic1.convert(microsec1, Ultrasonic::CM);
   
-  Serial.print("distancia:" );
-  Serial.println(distancia);
+  Serial.print("distancia1:" );
+    Serial.println(distancia1);
 
   Serial.print(" ----------------------- " );
   
-  long microsec1 = ultrasonic1.timing();
-  distancia1 = ultrasonic1.convert(microsec1, Ultrasonic::CM);
-  Serial.print  ("distancia1:" );
-  Serial.println(distancia1);
-
-/*
   long microsec2 = ultrasonic2.timing();
   distancia2 = ultrasonic2.convert(microsec2, Ultrasonic::CM);
-  Serial.println("distancia2:" + distancia2);
-*/
+  Serial.print  ("distancia2:" );
+  Serial.println(distancia2);
+
+
+  long microsec3 = ultrasonic3.timing();
+  distancia3 = ultrasonic3.convert(microsec3, Ultrasonic::CM);
+  Serial.println("distancia3:" + distancia3);
+
   delay(500);
 }
 
@@ -110,27 +110,27 @@ void requestEvent()
   //  Serial.print("enviando ");
   //  Serial.println(instruction[0]);
   if (instruction[0] == 1)  {
-    Wire.write(distancia); // respond with message
-    Serial.print("Value: ");
-    Serial.println(distancia);
-
-  }
-
-  if (instruction[0] == 2)
-  {
     Wire.write(distancia1); // respond with message
     Serial.print("Value: ");
     Serial.println(distancia1);
 
   }
-/*
-  if (instruction[0] == 3)
+
+  if (instruction[0] == 2)
   {
-    //Wire.write(distancia2); // respond with message
-Wire.write(20); // respond with message
+    Wire.write(distancia2); // respond with message
     Serial.print("Value: ");
     Serial.println(distancia2);
 
-  }*/
+  }
+
+  if (instruction[0] == 3)
+  {
+    //Wire.write(distancia3); // respond with message
+    Wire.write(distancia3); // respond with message
+    Serial.print("Value: ");
+    Serial.println(distancia3);
+
+  }
 }//end requestEvent
 //________________________________________________________________________________
