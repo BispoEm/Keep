@@ -11,7 +11,7 @@ void seguelinha()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// BRANCO FRENTE
 	if(cor1==1 && cor2==1){
-		setMultipleMotors(25,motorA,motorB);
+		setMultipleMotors(20,motorA,motorB);
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49,9 +49,6 @@ void seguelinha()
 	// PRETO ESQUERDA
 	if(cor1==2){
 		stopAllMotors();  wait(500,milliseconds);
-		setMultipleMotors(25,motorA,motorB);
-		wait(50,milliseconds);
-		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(200);
 		stopAllMotors(); 	wait(200,milliseconds);
 
@@ -71,9 +68,6 @@ void seguelinha()
 	// PRETO DIREITA
 	if(cor2==2){
 		stopAllMotors();  wait(500,milliseconds);
-		setMultipleMotors(25,motorA,motorB);
-		wait(50,milliseconds);
-		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(200);
 		stopAllMotors(); 	wait(200,milliseconds);
 
@@ -92,9 +86,6 @@ void seguelinha()
 	// VERDE ESQUERDA
 	if(cor1==4){
 		stopAllMotors();  wait(500,milliseconds);
-		setMultipleMotors(25,motorA,motorB);
-		wait(60,milliseconds);
-		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(100);
 		stopAllMotors(); 	wait(200,milliseconds);
 
@@ -133,9 +124,6 @@ void seguelinha()
 	// VERDE DIREITA
 	if(cor2==4){
 		stopAllMotors();  wait(500,milliseconds);
-		setMultipleMotors(25,motorA,motorB);
-		wait(60,milliseconds);
-		stopAllMotors(); 	wait(200,milliseconds);
 		sleep(100);
 		stopAllMotors(); 	wait(200,milliseconds);
 

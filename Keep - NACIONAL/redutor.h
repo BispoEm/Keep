@@ -1,21 +1,30 @@
+int esq(){
+	return getColorName(S1);
+}
+int dir(){
+	return getColorName(S2);
+}
 
 void segredutor(){
+	stopTask(obterCor);
+
 	// SE BRANCO FRENTE
-	if (cor1==1 && cor2==1 ){
+	if (esq()==6 && dir()==6 ){
 		setMultipleMotors(30,motorA,motorB);
 	}
 
 	// SE MEIO PRETO OU PRETO ESQUERDA
-	if (cor1!=1){
+	if (esq()!=6){
 		setMotor(motorA, 20);
 		setMotor(motorB, 50);
 	}
 
 	// SE MEIO PRETO OU PRETO DIREITA
-	if (cor2!=1){
+	if (dir()!=6){
 		setMotor(motorA, 50);
 		setMotor(motorB, 20);
 	}
+
 }
 
 void redutor(){
@@ -28,6 +37,7 @@ void redutor(){
 	while( getTimer(T1,milliseconds)<1000 ){
 		segredutor();
 	}
+	startTask(obterCor);
 
 	stopAllMotors(); wait(200,milliseconds);
 

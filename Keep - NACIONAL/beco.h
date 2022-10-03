@@ -13,7 +13,7 @@ void beco()
 
 	// VERDE FRENTE
 	setMultipleMotors(22,motorA,motorB);
-	wait(500,milliseconds);
+	wait(800,milliseconds);
 
 	stopAllMotors();	wait(100,milliseconds);
 

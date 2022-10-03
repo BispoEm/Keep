@@ -7,7 +7,7 @@ void detverde(){
 	v1=0;
 	v2=0;
 	setMultipleMotors(30, motorA, motorB);
-	wait(40, milliseconds);
+	wait(20, milliseconds);
 
 	while(verde<5){
 		setMotor(motorA,20);
@@ -72,7 +72,7 @@ void detverde(){
 }
 
 //*******************************
-//** codigo de detecÃÂÃÂ£o
+//** codigo de detecao
 //*******************************
 
 void verdeesquerda(){
@@ -85,14 +85,15 @@ void verdeesquerda(){
 
 	// VERDE FRENTE
 	setMultipleMotors(25,motorA,motorB);
-	wait(850,milliseconds);
+	wait(650,milliseconds);
 
-	stopAllMotors();	wait(200,milliseconds);
+	stopAllMotors();	wait(100,milliseconds);
 
-	// VIRADA TEMPO
-	setMotor(motorA,-30);
+	//virando por tempo
 	setMotor(motorB, 30);
-	wait(500,milliseconds);
+	moveMotor(motorA,180, degrees, -30);
+
+	stopAllMotors();	wait(20,milliseconds);
 
 	// ENQUANDO S1 DIFERENTE DE PRETO VIRAR DIREITA
 	while(cor3()!= PRETO){
@@ -135,12 +136,13 @@ void verdedireita(){
 	setMultipleMotors(25,motorA,motorB);
 	wait(650,milliseconds);
 
-	stopAllMotors();	wait(200,milliseconds);
+	stopAllMotors();	wait(100,milliseconds);
 
-	// VIRADA TEMPO
-	setMotor(motorA, 30);
-	setMotor(motorB,-30);
-	wait(500,milliseconds);
+	//virando por tempo
+	setMotor(motorB, -30);
+	moveMotor(motorA,180, degrees, 30);
+
+	stopAllMotors();	wait(20,milliseconds);
 
 	// ENQUANDO S1 DIFERENTE DE PRETO VIRAR DIREITA
 	while(cor3()!= PRETO){

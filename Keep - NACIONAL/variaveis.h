@@ -24,12 +24,12 @@ int red=0;
 
 // variveis para inserir valores
 // | - Sensor 1 - | //
-	int	abc1_branco = 2100; // valor branco estavel
-	int abc1_verde = 590; // valor verde estavel
+	int	abc1_branco = 2000; // valor branco estavel
+	int abc1_verde = 700; // valor verde estavel
 // | - Sensor 2 - | //
 // | - Sensor 1 - | //
 	int	abc2_branco = 1500; // valor branco estavel
-	int abc2_verde = 430 ; // valor verde estavel
+	int abc2_verde = 420 ; // valor verde estavel
 
 // variaveis para receber valores da calibracao
 // | - Sensor 1 - | //
