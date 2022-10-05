@@ -6,7 +6,7 @@ void detverde(){
 	verde=0;
 	v1=0;
 	v2=0;
-	setMultipleMotors(30, motorA, motorB);
+	setMultipleMotors(10, motorA, motorB);
 	wait(20, milliseconds);
 
 	while(verde<5){
@@ -85,7 +85,7 @@ void verdeesquerda(){
 
 	// VERDE FRENTE
 	setMultipleMotors(25,motorA,motorB);
-	wait(650,milliseconds);
+	wait(550,milliseconds);
 
 	stopAllMotors();	wait(100,milliseconds);
 
@@ -134,7 +134,7 @@ void verdedireita(){
 
 	// VERDE FRENTE
 	setMultipleMotors(25,motorA,motorB);
-	wait(650,milliseconds);
+	wait(550,milliseconds);
 
 	stopAllMotors();	wait(100,milliseconds);
 

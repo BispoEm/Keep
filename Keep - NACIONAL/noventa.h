@@ -1,6 +1,6 @@
 //jmbv 10/09/2022 criado um .h contendo os dois lados do noventa
 //*******************************
-//** codigo de detecÃÂÃÂ£o
+//** codigo de detecÃÂÃÂ�
 //*******************************
 
 void noventaesquerda()
@@ -29,7 +29,7 @@ void noventaesquerda()
 		contador=0;
 		stopAllMotors();	wait(100,milliseconds);
 		setMultipleMotors(25,motorA,motorB);
-		wait(600,milliseconds);
+		wait(550,milliseconds);
 
 		stopAllMotors();	wait(200,milliseconds);
 		contador=0;
@@ -77,7 +77,7 @@ void noventaesquerda()
 
 
 //*******************************
-//** codigo de detecÃÂÃÂ£o
+//** codigo de detecÃÂÃÂ�
 //*******************************
 void noventadireita()
 {
@@ -89,7 +89,7 @@ void noventadireita()
 	if ( cor3() != BRANCO ){
 		stopAllMotors(); wait(50,milliseconds);
 		setMultipleMotors(22,motorA,motorB);
-		wait(550,milliseconds);
+		wait(350,milliseconds);
 		// MEIO PRETO ESQUERDA
 		if(cor1!=1){
 			meiopreto_esq();
@@ -106,7 +106,7 @@ void noventadireita()
 		contador=0;
 		stopAllMotors();	wait(100,milliseconds);
 		setMultipleMotors(25,motorA,motorB);
-		wait(600,milliseconds);
+		wait(550,milliseconds);
 
 		stopAllMotors();	wait(200,milliseconds);
 		contador=0;

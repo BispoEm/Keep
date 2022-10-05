@@ -5,10 +5,6 @@ void beco()
 	playSound(soundBlip);	wait(2,milliseconds);
 	stopAllMotors();	wait(50,milliseconds);
 
-	setMotor(motorA,-30);
-	setMotor(motorB, 30);
-	wait(100,milliseconds);
-
 	stopAllMotors();	wait(100,milliseconds);
 
 	// VERDE FRENTE
@@ -20,8 +16,6 @@ void beco()
 	//virando por tempo
 	setMotor(motorB, 30);
 	moveMotor(motorA,800, degrees, -30);
-
-	stopAllMotors();	wait(20,milliseconds);
 
 	// ENQUANTO S2 DIFERENTE DE PRETO VIRAR ESQUERDA
 	while(cor3() == BRANCO ){
